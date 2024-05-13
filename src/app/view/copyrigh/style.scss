@@ -1,0 +1,19 @@
+.copyrigh {
+    text-align: center;
+    width: 100%;
+    color: #292929;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-copyrigh {
+        @media (max-width: 500px) {
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+
+        }
+    }
+}
