@@ -14,10 +14,7 @@ const Copyrigh = ({ theme }: any) => {
                     transition: ".5s",
                     color: !theme ? '#111' : 'rgb(241, 239, 233)'
                 }}>
-                Copyright © 2024 <div style={{ fontWeight: '800', marginLeft: 3 }}> MF Eldorado Granitos.</div> Todos os direitos reservados.
-            </div>
-            <div style={{ transition: ".5s", color: !theme ? '#606060' : 'rgb(241, 239, 233)' }}>
-                Desenvolvido por Warllei Martins
+                Copyright © 2024 <div style={{ fontWeight: '800', marginLeft: 3, color: '#aa8645' }}> MF Eldorado Granitos.</div> Todos os direitos reservados.
             </div>
         </div>
     )

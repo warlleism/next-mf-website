@@ -6,6 +6,7 @@ import Contato from "../view/contato";
 import Copyrigh from "../view/copyrigh";
 import Header from "../view/header";
 import Poster from "../view/poster";
+import InfoComponent from "../view/info";
 
 const Main = () => {
 
@@ -28,6 +29,7 @@ const Main = () => {
         <div className="global">
             <Header theme={theme} handlerTheme={handlerTheme} />
             <Carousel theme={theme} />
+            <InfoComponent theme={theme} />
             <Poster theme={theme} />
             <Contato theme={theme} />
             <Copyrigh theme={theme} />

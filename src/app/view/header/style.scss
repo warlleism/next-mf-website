@@ -62,7 +62,7 @@
   }
 
   .white-card {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -79,6 +79,33 @@
       font-weight: 900;
       position: relative;
       letter-spacing: -5px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+      }
+
+      &:nth-child(1)::after {
+        top: 0;
+        left: 0;
+        width: 200px;
+        background-color: #fff;
+      }
+
+      &:nth-child(2)::after {
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        background-color: rgba(192, 151, 76, 0.87);
+      }
+
+      &:nth-child(3)::after {
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        background-color: #fff;
+      }
     }
 
     #txt1 {
@@ -94,46 +121,19 @@
     }
   }
 
-  .white-card > div:nth-child(1)::after {
-    content: "";
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 200px;
-    position: absolute;
-    background-color: #fff;
-  }
 
-  .white-card > div:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 4px;
-    width: 50%;
-    background-color: rgba(192, 151, 76, 0.87);
-  }
-
-  .white-card > div:nth-child(3)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 50%;
-    background-color: #fff;
-  }
 
   .black-card {
-    width: 40%;
+    width: 30%;
     overflow: hidden;
     position: relative;
-   
-    img{
-      position: absolute;
+
+    img {
+      object-fit: cover;
       left: 0px;
-      width: 1000px;
       height: 100%;
+      width: 1000px;
+      position: absolute;
     }
 
     div {
@@ -163,7 +163,7 @@
       }
     }
 
-    .white-card > div:nth-child(2)::after {
+    .white-card>div:nth-child(2)::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -221,7 +221,7 @@
       }
     }
 
-    .white-card > div:nth-child(2)::after {
+    .white-card>div:nth-child(2)::after {
       right: 170px;
     }
   }

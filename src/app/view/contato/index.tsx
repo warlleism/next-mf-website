@@ -20,7 +20,7 @@ const Contato = ({ theme }: any) => {
             <div className="title-contato"
                 style={{
                     transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff',
-                }}>Contato</div>
+                }}>CONTATOS</div>
             <div className="container-info-map">
                 <div className="container-contato-child">
                     <div className="container-info-contato"
@@ -28,14 +28,7 @@ const Contato = ({ theme }: any) => {
                             background: !theme ? '#ffffff' : 'rgb(30, 30, 30)',
                         }}>
                         <div
-                            style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
-                            <div>Contato</div>
-                            <div
-                                style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : 'rgb(138, 133, 133)' }}
-                            >(27) 99881-4012</div>
-                        </div>
-                        <div
-                            style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
+                            style={{ marginTop: 10, transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
                             <div>Whatsapp</div>
                             <div >
                                 <a
