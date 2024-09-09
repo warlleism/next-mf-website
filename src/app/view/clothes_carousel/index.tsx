@@ -58,7 +58,6 @@ const Carousel = ({ theme }: any) => {
                             )
                         })
                     }
-
                 </motion.div>
             </motion.div>
         </div >

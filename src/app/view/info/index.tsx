@@ -9,11 +9,11 @@ const InfoComponent = ({ theme }: any) => {
         }}>
             <div className="title-services"
                 style={{
-                    transition: ".5s", color: !theme ? '#db8f00de' : '#fff',
+                    transition: ".5s", color: !theme ? '#4e3300de' : '#fff',
                 }}>SERVIÇOS</div>
-            <div className='container-info' style={{ border: !theme ? "solid 2px rgba(78, 51, 0, 0.87)" : "solid 2px #fff" }}>
+            <div className='container-info' style={{ border: "solid 2px #a86d00de" }}>
                 <div className='container-list-itens'>
-                    <div className='icon-info-container'  style={{
+                    <div className='icon-info-container' style={{
                         border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
                     }}>
                         <FaHammer size={27} />
@@ -32,8 +32,8 @@ const InfoComponent = ({ theme }: any) => {
                     </ul>
                 </div>
                 <div className='container-list-itens'>
-                    <div className='icon-info-container'  style={{
-                        border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
+                    <div className='icon-info-container' style={{
+                        border: !theme ? '2px #a86d00de solid' : '2px #fff solid',
                     }}>
                         <FaBoxOpen size={27} />
                     </div>
@@ -51,7 +51,7 @@ const InfoComponent = ({ theme }: any) => {
                     </ul>
                 </div>
                 <div className='container-list-itens'>
-                    <div className='icon-info-container'  style={{
+                    <div className='icon-info-container' style={{
                         border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
                     }}>
                         <MdKitchen size={27} />
@@ -68,8 +68,9 @@ const InfoComponent = ({ theme }: any) => {
                         <li>Mesas e Balcões</li>
                     </ul>
                 </div>
+                <div className='line' />
                 <div className='container-list-itens'>
-                    <div className='icon-info-container'  style={{
+                    <div className='icon-info-container' style={{
                         border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
                     }}>
                         <FaHandsHelping size={27} />
@@ -86,8 +87,9 @@ const InfoComponent = ({ theme }: any) => {
                         <li>Suporte técnico especializado</li>
                     </ul>
                 </div>
+                <div className='line' />
                 <div className='container-list-itens' style={{ borderRight: 'none' }}>
-                    <div className='icon-info-container'  style={{
+                    <div className='icon-info-container' style={{
                         border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
                     }}>
                         <FaPhoneAlt size={27} />
@@ -104,6 +106,7 @@ const InfoComponent = ({ theme }: any) => {
                     </ul>
                 </div>
             </div>
+            <div className='line' />
         </div>
     )
 }
