@@ -16,14 +16,9 @@ const Carousel = ({ theme }: any) => {
     }, [])
 
     return (
-        <div className='container-carousel'
+        <div className='container-carousel' id='granite'
             style={{ background: !theme ? '#f1efe9' : 'rgb(17, 17, 17)' }}
         >
-            <div className='container-change-skin-gener'>
-                <div
-                    style={{ color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}
-                >GRANITOS</div>
-            </div>
 
             <motion.div
                 ref={carousel}

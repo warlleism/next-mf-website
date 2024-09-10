@@ -62,7 +62,7 @@
   }
 
   .white-card {
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -74,7 +74,7 @@
     div {
       width: 560px;
       font-size: 8rem;
-      transition: 0.8s;
+      transition: 0.2s;
       color: #ffffff;
       font-weight: 900;
       position: relative;
@@ -109,31 +109,31 @@
     }
 
     #txt1 {
-      transform: translateX(-1500px);
+      transform: translateX(-1000px);
     }
 
     #txt2 {
-      transform: translateX(-1500px);
+      transform: translateX(-1000px);
     }
 
     #txt3 {
-      transform: translateX(-1500px);
+      transform: translateX(-1000px);
     }
   }
 
 
 
   .black-card {
-    width: 30%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     overflow: hidden;
-    position: relative;
 
     img {
-      object-fit: cover;
-      left: 0px;
-      height: 100%;
-      width: 1000px;
-      position: absolute;
+      height: 97%;
+      width: 80%;
+      object-fit: contain;
     }
 
     div {

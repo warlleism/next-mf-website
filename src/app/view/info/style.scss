@@ -4,22 +4,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
-
-    @media (max-width: 736px) {
-        gap: 50px;
-        height: 90vh;
-        justify-content: center;
-    }
+    overflow: auto;
 
     .title-services {
         font-size: 2rem;
         margin: 100px 0;
         letter-spacing: 4px;
-
-        @media (max-width: 736px) {
-            margin: 0;
-        }
     }
 
     .container-info {
@@ -27,22 +17,22 @@
         height: 63%;
         display: flex;
         align-items: center;
+        justify-content: center;
         border-top-left-radius: 30px;
         border-bottom-right-radius: 30px;
-        justify-content: center;
 
-        @media (max-width: 1193px) {
-            width: 90%;
+        @media (max-width: 1599px) {
+            width: 95%;
         }
 
-        @media (max-width: 736px) {
-            width: 100%;
-            height: 73%;
-            border-radius: 0;
+        @media (max-width: 375px) {
+            width: 85vw;
+            height: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
             overflow-x: auto;
-            border: none !important;
-            justify-content: start;
-            flex-direction: column;
+            overflow-y: hidden;
         }
 
         .container-list-itens {
@@ -54,9 +44,13 @@
             transition: .1s ease-in-out;
             border-right: solid 2px #aa8645;
 
-            @media (max-width: 736px) {
-                width: 100%;
-                border: none;
+            @media (max-width: 965px) {
+                width: 20%;
+            }
+
+            @media (max-width: 375px) {
+                width: 100px;
+                padding: 10px;
             }
 
             .icon-info-container {
@@ -68,11 +62,6 @@
                 justify-content: center;
                 color: #f19d00de;
                 transition: .2s ease-in-out;
-
-                @media (max-width: 736px) {
-                    width: 40px;
-                    height: 40px;
-                }
             }
 
             .title-list-info {
@@ -87,13 +76,15 @@
                 text-transform: uppercase;
                 transition: .2s ease-in-out;
 
-                @media (max-width: 1363px) {
+
+                @media (max-width: 1162px) {
                     font-size: 1rem;
                 }
 
-                @media (max-width: 736px) {
+                @media (max-width: 632px) {
                     font-size: .7rem;
                 }
+
             }
 
             .line {
@@ -102,14 +93,6 @@
                 border-radius: 100px;
                 background-color: #a86d00de;
                 transition: .2s ease-in-out;
-
-                @media (max-width: 1731px) {
-                    margin-bottom: 30px;
-                }
-
-                @media (max-width: 1497px) {
-                    margin-bottom: 10px;
-                }
             }
 
             ul {
@@ -129,15 +112,32 @@
                     font-size: .9rem;
                     letter-spacing: -.4px;
 
-                    @media (max-width: 1363px) {
-                        font-size: .8rem;
+                }
+
+                @media (max-width: 1162px) {
+                    li {
+                        font-size: .7rem;
                     }
 
-                    @media (max-width: 1032px) {
-                        font-size: .6rem;
-                        letter-spacing: 0px;
+                    .icons-info {
+                        display: none;
                     }
+                }
 
+                @media (max-width: 868px) {
+                    li {
+                        word-wrap: break-word;
+                        white-space: normal;
+                        overflow-wrap: break-word;
+                    }
+                }
+
+                @media (max-width: 632px) {
+                    gap: 10px;
+
+                    li {
+                        font-size: .56rem;
+                    }
                 }
             }
 
@@ -151,13 +151,12 @@
         }
     }
 
-
     @media (min-width: 1363px) {
         .container-list-itens:hover {
             transform: scale(1.1);
             border-radius: 20px;
             background-color: #161616;
-            border: solid 2px #ffa825;
+            border: solid 2px #ffa825 !important;
 
             .colorDark {
                 color: rgb(255, 255, 255);

@@ -8,15 +8,6 @@ import { BsFillMouseFill } from "react-icons/bs";
 
 const Header = ({ handlerTheme, theme }: any) => {
 
-    function Drop() {
-        const height = document.body.scrollHeight
-        if (height >= 4457) {
-            window.scrollTo(0, 970)
-        } else {
-            window.scrollTo(0, 700)
-        }
-    }
-
     function transformTitle() {
         const t1 = document.getElementById('txt1') as HTMLElement
         const txt1 = t1?.style
@@ -99,17 +90,17 @@ const Header = ({ handlerTheme, theme }: any) => {
             </div>
             <div className='black-card'>
                 <Image
-                    src={require('../../images/img.jpg')}
+                    src={require('../../images/img.png')}
                     alt='granito'
                 />
             </div>
 
             <div className='container-drop-arrow'>
-                <div
+                <a href='#granite'
                     style={{ cursor: 'pointer' }}
-                    onClick={() => Drop()}>
-                    <BsFillMouseFill color='#aa8645' size={40} />
-                </div>
+                >
+                    <BsFillMouseFill color='#aa8645' size={35} />
+                </a>
             </div>
         </div>
     )

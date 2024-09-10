@@ -32,9 +32,7 @@ const InfoComponent = ({ theme }: any) => {
                     </ul>
                 </div>
                 <div className='container-list-itens'>
-                    <div className='icon-info-container' style={{
-                        border: !theme ? '2px #a86d00de solid' : '2px #fff solid',
-                    }}>
+                    <div className='icon-info-container' style={{ border: !theme ? '2px #a86d00de solid' : '2px #fff solid' }}>
                         <FaBoxOpen size={27} />
                     </div>
                     <div className='title-list-info' style={{
@@ -68,7 +66,6 @@ const InfoComponent = ({ theme }: any) => {
                         <li>Mesas e Balcões</li>
                     </ul>
                 </div>
-                <div className='line' />
                 <div className='container-list-itens'>
                     <div className='icon-info-container' style={{
                         border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
@@ -87,21 +84,16 @@ const InfoComponent = ({ theme }: any) => {
                         <li>Suporte técnico especializado</li>
                     </ul>
                 </div>
-                <div className='line' />
                 <div className='container-list-itens' style={{ borderRight: 'none' }}>
-                    <div className='icon-info-container' style={{
-                        border: !theme ? '2px #db8f00de solid' : '2px #fff solid',
-                    }}>
+                    <div className='icon-info-container' style={{ border: !theme ? '2px #db8f00de solid' : '2px #fff solid' }}>
                         <FaPhoneAlt size={27} />
                     </div>
-                    <div className='title-list-info' style={{
-                        color: !theme ? '#db8f00de' : '#fff',
-                    }}>Contato</div>
+                    <div className='title-list-info' style={{ color: !theme ? '#db8f00de' : '#fff' }}>Contato</div>
                     <div className='line' />
                     <ul className={`${!theme ? 'colorDark' : 'colorLight'}`}>
-                        <li><FaEnvelope size={15} style={{ marginRight: 5 }} />warllei.s.martins@hotmail.com</li>
-                        <li><FaPhoneAlt size={15} style={{ marginRight: 5 }} />(27) 99881-4012</li>
-                        <li><FaMapMarkerAlt size={15} style={{ marginRight: 5 }} />Estr. Ayrton Senna da Silva, 2072 - Barramares, Vila Velha - ES, 29124-386</li>
+                        <li><FaEnvelope className='icons-info' size={15} style={{ marginRight: 5 }} />warllei.s.martins@hotmail.com</li>
+                        <li><FaPhoneAlt className='icons-info' size={15} style={{ marginRight: 5 }} />(27) 99881-4012</li>
+                        <li><FaMapMarkerAlt className='icons-info' size={15} style={{ marginRight: 5 }} />Estr. Ayrton Senna da Silva, 2072 - Barramares, Vila Velha - ES, 29124-386</li>
                         <li>Horário de Funcionamento: Seg/Sex 7:27h às 18h</li>
                     </ul>
                 </div>
