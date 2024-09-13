@@ -4,6 +4,8 @@ interface Itens {
 }
 
 export const Intagram_content: Itens[] = [
+    { id: 16, img: require("../images/instagram/img16.png") },
+    { id: 15, img: require("../images/instagram/img15.png") },
     { id: 12, img: require("../images/instagram/img12.png") },
     { id: 1, img: require("../images/instagram/img1.png") },
     { id: 5, img: require("../images/instagram/img5.png") },
